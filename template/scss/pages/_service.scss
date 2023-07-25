@@ -1,0 +1,238 @@
+.sv {
+    &-all {
+        position: relative;
+
+        &::after {
+            content: '';
+            background-image: url("../assets/images/relate-dc.png");
+            @include default-background;
+            position: absolute;
+            width: 100%;
+            height: calc(100vw*(640/1728));
+            top: 2rem;
+            left: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        &-flex {
+            margin-bottom: 2.4rem;
+        }
+
+        &-ver {
+            width: 50%;
+            @include max(450px) {
+                width: 100%;
+            }
+            .inner {
+                @include flex;
+                border-radius: 1.2rem;
+                overflow: hidden;
+                background-color: $color-pri;
+                @include max(750px) {
+                    flex-direction: column;
+                }
+                .img {
+                    width: 50%;
+                    flex-shrink: 0;
+                    position: relative;
+                    @include mid-flex;
+                    @include max(750px) {
+                        width: 100%;
+                    }
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        @include full;
+                        transition: 0.4s;
+                        border-radius: 12px 0px 0px 12px;
+                        background: linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+                        opacity: 0;
+                    }
+
+                    .btn {
+                        position: absolute;
+                        z-index: 2;
+                        transform: translateY(100%);
+                        transition: 0.4s;
+                        opacity: 0;
+                    }
+
+                    &-inner {
+                        @include imgPd(1, 1);
+                        width: 100%;
+                        height: 100%;
+                        img {
+                            @include imgCover;
+                        }
+                    }
+                }
+
+                @include hover {
+                    .img {
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+
+                    .btn {
+                        transform: translateY(0);
+                        opacity: 1;
+                        transition-delay: 0.2s
+                    }
+                }
+                @include non-hover {
+                    .img {
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+
+                    .btn {
+                        transform: translateY(0) !important;
+                        opacity: 1 !important;
+                    }
+                }
+
+                .info {
+                    width: 50%;
+                    @include max(750px) {
+                        width: 100%;
+                    }
+                    &-tt {
+                        @include flex;
+                        align-items: center;
+                        margin-bottom: 2rem;
+                        @include max(800px) {
+                            margin-bottom: 1rem;
+                        }
+                        .icon {
+                            width: 5rem;
+                            height: 5rem;
+                            border-radius: 100rem;
+                            border: 0.1rem dashed $color-white;
+                            margin-right: 0.8rem;
+                            @include mid-flex;
+                            position: relative;
+                            @include max(1000px) {
+                                width: 4rem;
+                                height: 4rem;
+                            }
+                            &::after {
+                                content: '';
+                                width: 4.2rem;
+                                height: 4.2rem;
+                                border-radius: 100rem;
+                                background-color: $color-white;
+                                position: absolute;
+                                @include max(1000px) {
+                                    width: 3.2rem;
+                                    height: 3.2rem;
+                                }
+                            }
+
+                            img {
+                                width: 1.8rem;
+                                height: 1.8rem;
+                                z-index: 2;
+                                @include max(1000px) {
+                                    width: 1.4rem;
+                                    height: 1.4rem;
+                                }
+                            }
+                        }
+
+                        .text {
+                            @include fz-20;
+                            font-weight: 600;
+                            color: $color-white;
+                            line-height: 1.2;
+                            @include lc(2);
+                            @include max(1000px) {
+                                @include fz-16;
+                            }
+                        }
+                    }
+
+                    &-inner {
+                        @include flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        height: 100%;
+                        padding: 2rem;
+                        @include max(800px) {
+                            padding: 1rem;
+                        }
+                        .desc {
+                            color: $color-white;
+                            opacity: 0.8;
+                            @include max(1000px) {
+                                @include fz-14;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-list {
+            position: relative;
+            .swiper {
+                &-slide {
+                    height: auto !important;
+                }
+            }
+        }
+        &-it {
+            height: 100%;
+            .inner {
+                background-color: $color-white;
+                border-radius: 1.2rem;
+                @include flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 3.7rem 2rem 2.8rem;
+                height: 100%;
+
+                .ic {
+                    width: 5.6rem;
+                    height: 5.6rem;
+                    border-radius: 100rem;
+                    background-color: $color-pri;
+                    @include mid-flex;
+                    margin-bottom: 2rem;
+
+                    img {
+                        width: 2.4rem;
+                        height: 2.4rem;
+                    }
+                }
+
+                .tt {
+                    @include fz-20;
+                    font-weight: 600;
+                    color: $color-text;
+                    text-align: center;
+                    margin-bottom: 2rem;
+                    display: block;
+                    @include max(600px) {
+                        @include fz-16;
+                    }
+                }
+
+                .desc {
+                    text-align: center;
+                    margin-bottom: 3rem;
+                    @include max(600px) {
+                        @include fz-14;
+                    }
+                }
+
+                .btn {
+                    width: fit-content;
+                    margin: auto;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
