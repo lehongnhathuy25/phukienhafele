@@ -1,0 +1,112 @@
+.contact_page {
+  .contact-box {
+    .contact-content-row {
+      @include max(991px) {
+        padding: 0 1.2rem;
+      }
+    }
+    .contact-col-left {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 90%;
+        background: $color-pri;
+        border-radius: 0.8rem 0 0 0.8rem;
+        z-index: -1;
+      }
+      padding: 3.2rem 0;
+      .contact-box-left {
+        background: $color-white;
+        box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.2);
+        padding: 5rem 7.8rem;
+        @include max(991px) {
+          padding: 4rem;
+        }
+        @include max(767px) {
+          padding: 3rem;
+        }
+        .contact-head {
+          margin-bottom: 3.2rem;
+        }
+        .contact-info {
+          .contact-info-box {
+            display: flex;
+            column-gap: 1rem;
+            margin-bottom: 1.2rem;
+            .info-icon {
+            }
+            .info-txt {
+              a {
+                -webkit-text-fill-color: $color-dark-2;
+                color: $color-dark-2;
+                @include fz-16;
+              }
+            }
+          }
+        }
+        .contact-follows {
+          margin-top: 3.2rem;
+          a {
+            padding-right: 1.2rem;
+          }
+        }
+      }
+    }
+    .contact-col-right {
+      background: $color-pri;
+      padding: 3.2rem 5.5rem;
+      border-radius: 0 0.8rem 0.8rem 0;
+      @include max(991px) {
+        padding: 3rem;
+      }
+      .contact-form {
+        .form_lh {
+          margin-top: 4rem;
+          @include max(991px) {
+            margin-top: 2rem;
+          }
+          .form-group {
+            .form-control {
+              background: transparent;
+              border: none;
+              padding: 1rem 0;
+              color: #fff;
+              width: 100%;
+              border-bottom: 1px solid #ffffff79;
+              margin-bottom: 4rem;
+              &::placeholder {
+                color: $color-white;
+                @include fz-16;
+                font-weight: 400;
+              }
+              @include max(991px) {
+                margin-bottom: 2rem;
+              }
+            }
+            .btn-submit {
+              padding: 10px 24px;
+              background: $color-white;
+              border-radius: 0.8rem;
+              color: $color-pri;
+              font-weight: bold;
+              border: none;
+              cursor: pointer;
+            }
+            textarea {
+              height: 9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact-map {
+    filter: drop-shadow(-1px 4px 10px rgba(50, 50, 0, 0.3));
+    .iframe-map {
+      clip-path: polygon(100% 1%, 100% 86%, 50% 100%, 0 86%, 0 0);
+    }
+  }
+}

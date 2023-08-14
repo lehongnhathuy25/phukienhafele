@@ -9,6 +9,7 @@
 @import url("../js/library/split/splitting.css");
 @import url("../js/library/magnific/magnific-popup.css");
 @import url("../js/library/gallery/lightgallery.min.css");
+@import url("../js/library/fancybox/fancybox.css");
 // Core
 @import "./core/reset";
 @import "./core/variable";
@@ -34,6 +35,7 @@
 @import "./components/popup";
 @import "./components/ani";
 // Layout
+@import "./layouts/contactinfo";
 @import "./layouts/banner";
 @import "./layouts/breadcrumb";
 @import "./layouts/btn";
@@ -57,3 +59,5 @@
 // Pages
 @import "./pages/home";
 @import "./pages/restyle";
+@import "./pages/contact2";
+@import "./pages/systemShowroom";

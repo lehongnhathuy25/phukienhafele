@@ -25,36 +25,38 @@ import View3DModule from "./module/View3DModule.js";
 import InputModule from "./module/InputModule.js";
 import ParallaxModule from "./module/ParallaxModule.js";
 import TimerModule from "./module/TimerModule.js";
-
-
+import fancybox from "./module/fancybox.js";
+import Readmore from "./module/readMore.js";
 
 window.addEventListener("DOMContentLoaded", () => {
-    MobileModule();
-    SplitModule()
-    AosModule();
-    BtnToTopModule();
-    PopupModule();
-    SwiperModule();
-    // LoadModule();
-    GalleryModule();
-    TabModule();
-    HeaderModule();
-    SideModule();
-    ShowHideModule();
-    OpenPopup();
-    Animated();
-    SmoothScrollModule();
-    LoadMoreModule();
-    CollapseModule();
-    // CmtModule();
-    scrollContent();
-    CountUpModule();
-    Select2Module();
-    RangeModule();
-    PlusMinusModule();
-    RatingModule();
-    View3DModule()
-    InputModule()
-    ParallaxModule();
-    TimerModule();
+  fancybox();
+  MobileModule();
+  SplitModule();
+  AosModule();
+  BtnToTopModule();
+  PopupModule();
+  SwiperModule();
+  // LoadModule();
+  GalleryModule();
+  TabModule();
+  HeaderModule();
+  SideModule();
+  ShowHideModule();
+  OpenPopup();
+  Animated();
+  SmoothScrollModule();
+  LoadMoreModule();
+  CollapseModule();
+  // CmtModule();
+  scrollContent();
+  CountUpModule();
+  Select2Module();
+  RangeModule();
+  PlusMinusModule();
+  RatingModule();
+  View3DModule();
+  InputModule();
+  ParallaxModule();
+  TimerModule();
+  Readmore();
 });

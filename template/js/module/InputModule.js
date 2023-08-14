@@ -23,7 +23,9 @@ export default function InputModule() {
             }
             if (textarea) {
                 const text = items.querySelector('.text-abs')
-                text.classList.add('field')
+                if ( text ) {
+                    text.classList.add('field')
+                }
                 textarea.addEventListener('input', () => {
                     if (textarea.value != '') {
                         textarea.parentElement.parentElement.classList.add('active')

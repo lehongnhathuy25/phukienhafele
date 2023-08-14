@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/backdoor.css" />
+    <!-- <link rel="icon" type="image/png" href="./assets/images/mona.png" /> -->
+    <title>Hệ thống cửa hàng</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-bn">
+        <img src="./assets/images/Top-banner.jpg" alt="" />
+      </div>
+      <div class="header-mid">
+        <div class="header-logo">
+          <a href="" class="custom-logo-link">
+            <img src="./assets/images/logo.png" alt="" />
+          </a>
+        </div>
+        <div class="header-srch">
+          <form action="">
+            <div class="header-srch-f">
+              <input type="text" placeholder="Bạn cần tìm gì ?" />
+              <button>
+                <img src="./assets/images/ic-srch.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="header-action">
+          <div class="header-action-it popup-open" data-popup="search">
+            <span class="ic">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+          <a href="" class="header-action-it">
+            <span class="ic">
+              <img src="./assets/images/ic-phone.svg" alt="" />
+            </span>
+            <span class="txt">
+              <span class="txt-name">Gọi mua hàng</span>
+              <span class="txt-val">090 999 3854</span>
+            </span>
+          </a>
+          <a href="" class="header-action-it">
+            <span class="ic">
+              <img src="./assets/images/ic-pin.svg" alt="" />
+            </span>
+            <span class="txt">
+              <span class="txt-name">Hệ thống</span>
+              <span class="txt-val">Cửa hàng</span>
+            </span>
+          </a>
+          <a href="" class="header-action-it">
+            <span class="ic">
+              <img src="./assets/images/ic-cart.svg" alt="" />
+            </span>
+            <span class="txt">
+              <span class="txt-name"><span class="bold">0</span> sản phẩm</span>
+              <span class="txt-val">Giỏ hàng</span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="header-bot">
+        <div class="header-cate">
+          <div class="header-cate-hd">
+            <i class="fa-solid fa-bars icons"></i>
+            <a href="" class="txt"> Danh mục sản phẩm </a>
+          </div>
+          <div class="header-cate-bd">
+            <div class="cate-nav">
+              <div class="cate-nav-wr">
+                <ul class="menu-list">
+                  <li class="menu-item dropdown km">
+                    <a href="" class="menu-link"> Khuyến mãi đặc biệt </a>
+                    <ul class="menu-list">
+                      <li class="menu-item km">
+                        <a href="" class="menu-link"> Khuyến mãi đặc biệt </a>
+                      </li>
+                      <li class="menu-item dropdown">
+                        <a href="" class="menu-link"> Thiết bị Bếp Hafele </a>
+                        <ul class="menu-list">
+                          <li class="menu-item km">
+                            <a href="" class="menu-link">
+                              Khuyến mãi đặc biệt
+                            </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link">
+                              Thiết bị Bếp Hafele
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Thiết bị Bếp Hafele </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Thiết bị bếp Bosh </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Phụ kiện tủ bếp Hafele </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Phụ kiện đồ gỗ </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Phụ kiện cửa Hafele </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav">
+          <div class="menu-nav">
+            <ul class="menu-list">
+              <li class="menu-item current_page_item">
+                <a href="" class="menu-link"> Giới thiệu </a>
+              </li>
+              <li class="menu-item km">
+                <a href="" class="menu-link"> Khuyến mãi</a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link">Catalogues</a>
+              </li>
+              <li class="menu-item dropdown">
+                <a href="" class="menu-link"> Chứng nhận </a>
+                <ul class="menu-list">
+                  <li class="menu-item dropdown current_page_item">
+                    <a href="" class="menu-link"> Giới thiệu </a>
+                    <ul class="menu-list">
+                      <li class="menu-item current_page_item">
+                        <a href="" class="menu-link"> Giới thiệu </a>
+                      </li>
+                      <li class="menu-item km">
+                        <a href="" class="menu-link"> Khuyến mãi</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item km">
+                    <a href="" class="menu-link"> Khuyến mãi</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link"> Tin tức </a>
+              </li>
+              <li class="menu-item">
+                <a href="" class="menu-link"> Liên hệ </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="header-lg">
+          <a href="" class="header-lg-it active"> VN </a>
+          <a href="" class="header-lg-it"> EN </a>
+        </div>
+        <div class="burger">
+          <div class="hamburger" id="hamburger">
+            <svg class="ham" viewBox="0 0 100 100" width="40">
+              <path
+                class="line top"
+                d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
+              ></path>
+              <path class="line middle" d="m 30,50 h 40"></path>
+              <path
+                class="line bottom"
+                d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-overlay"></div>
+      <div class="mobile">
+        <div class="mobile-con">
+          <div class="mobile-wr">
+            <div class="mobile-nav">
+              <div class="menu-nav menu-have-icon">
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Giới thiệu</a>
+                  </li>
+                  <li class="menu-item dropdown current_page_item">
+                    <a href="" class="menu-link"> Khuyến mãi </a>
+                    <ul class="menu-list">
+                      <li class="menu-item dropdown">
+                        <a href="" class="menu-link"> Khuyến mãi 1 </a>
+                        <ul class="menu-list">
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Khuyến mãi 1 1 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Khuyến mãi 1 2 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Khuyến mãi 1 3 </a>
+                          </li>
+                          <li class="menu-item">
+                            <a href="" class="menu-link"> Khuyến mãi 1 4 </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="menu-item current_page_item">
+                        <a href="" class="menu-link"> Khuyến mãi 2 </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="" class="menu-link"> Khuyến mãi 3 </a>
+                      </li>
+                      <li class="menu-item">
+                        <a href="" class="menu-link"> Khuyến mãi 4 </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Catalogues </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chứng nhận </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Tin tức </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Liên hệ </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="mobile-content">
+              <p class="mobile-title">THÔNG TIN LIÊN HỆ</p>
+              <div class="mobile-fl mb-16s">
+                <span class="fw-6">Số điện thoại:</span>
+                <div class="mobile-box">
+                  <a href="" class="mobile-text mobile-link"> 0909 993 854 </a>
+                  <span class="xe">-</span>
+                  <a href="" class="mobile-text mobile-link"> 0909 973 175 </a>
+                </div>
+              </div>
+              <div class="mobile-fl mb-16s">
+                <span class="fw-6">Email:</span>
+                <a href="" class="mobile-text mobile-link">
+                  bephoangduyphat@gmail.com
+                </a>
+              </div>
+              <div class="mobile-fl mb-16s">
+                <span class="fw-6">Địa chỉ:</span>
+                <a href="" class="mobile-text mobile-link">
+                  77 đường số 1, Cityland Center Hill, P. 7, Q. Gò Vấp, TP. Hồ
+                  Chí Minh
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-mxh">
+          <a href="" class="mobile-mxh-link">
+            <img src="./assets/images/ic-fb.png" alt="" />
+          </a>
+          <a href="" class="mobile-mxh-link">
+            <img src="./assets/images/ic-yt.png" alt="" />
+          </a>
+          <a href="" class="mobile-mxh-link">
+            <img src="./assets/images/ic-ins.png" alt="" />
+          </a>
+          <a href="" class="mobile-mxh-link">
+            <img src="./assets/images/ic-tiktok.png" alt="" />
+          </a>
+          <a href="" class="mobile-mxh-link">
+            <img src="./assets/images/ic-zalo.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main system-showroom">
+      <section class="system-map py">
+        <div class="container">
+          <h3 class="text-cap title-second text-dark text-center">
+            Hệ thống cửa hàng Hoàng duy phát
+          </h3>
+          <div class="rows system-map-row">
+            <div class="col-md-4 col-12">
+              <div class="system-map-left radius-8">
+                <h3 class="title-third text-white">Tìm cửa hàng</h3>
+                <form class="form-filter-showroom text-white" role="search">
+                  <label class="form-label" for="province">
+                    <p class="form-label-txt mb-12">Chọn tỉnh thành</p>
+                    <select class="select-province form-control" id="province">
+                      <option value="">Chọn tỉnh thành</option>
+                      <option value="HCM">Hồ Chí Minh</option>
+                      <option value="HN">Hà Nội</option>
+                      <option value="DN">Đà Nẵng</option>
+                    </select>
+                  </label>
+                  <label class="form-label" for="showroom">
+                    <p class="form-label-txt mb-12">Chọn cửa hàng</p>
+                    <select class="select-showroom form-control" id="showroom">
+                      <option value="">Chọn showroom</option>
+                      <option value="Gò Vấp">Showroom Gò Vấp</option>
+                      <option value="Bình thạnh">Showroom Gò Vấp</option>
+                    </select>
+                  </label>
+                </form>
+                <div class="contact-info text-white">
+                  <h4 class="mb-12 info-tt">Thông tin liên hệ</h4>
+                  <div class="contact-info-box">
+                    <div class="info-icon">
+                      <img src="./assets/images/Capa_1.svg" alt="" />
+                    </div>
+                    <div class="info-txt">
+                      <a class="info-txt-sm" href="#"> 0909 993 854 </a>
+                      <a class="info-txt-sm" href="#"> - 0909 973 175</a>
+                    </div>
+                  </div>
+                  <div class="contact-info-box">
+                    <div class="info-icon">
+                      <img src="./assets/images/Layer_1.svg" alt="" />
+                    </div>
+                    <div class="info-txt">
+                      <a class="info-txt-sm" href="mailto:admin@gmail.com">
+                        bephoangduyphat@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                  <div class="contact-info-box">
+                    <div class="info-icon">
+                      <img src="./assets/images/Layer_1 (1).svg" alt="" />
+                    </div>
+                    <div class="info-txt">
+                      <p class="info-txt-sm">
+                        77 đường số 1, Cityland Center Hill, P. 7, Q. Gò Vấp,
+                        TP. Hồ Chí Minh
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8 col-12">
+              <div class="system-map-ifram">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.2654293242263!2d106.65354957578406!3d10.790971358923715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ecb2f6e97fb%3A0x45c50d9a76a79124!2zMTA3My8yMyDEkC4gQ8OhY2ggTeG6oW5nIFRow6FuZyA4LCBQaMaw4budbmcgNywgVMOibiBCw6xuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1690862156138!5m2!1svi!2s"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="system-galle py">
+        <div class="container">
+          <div class="rows">
+            <div class="col-md-8 col-12 system-video">
+              <div class="aligh-item-center row-head">
+                <h3 class="text-dark title-second">Video</h3>
+                <a href="#" target="_blank" class="btn-view-all">
+                  Tất cả video
+                  <img src="./assets/images/Layer_1 (2).svg" alt="" />
+                </a>
+              </div>
+              <div class="system-video-slide">
+                <div class="system-video-list swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide system-video-item">
+                      <a
+                        data-fancybox="gallery"
+                        class="video-link"
+                        href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=0&enablejsapi=1&wmode=opaque"
+                      >
+                        <div class="box-img">
+                          <img
+                            class="img-video"
+                            src="./assets/images/video1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box-txt">
+                          <h3 class="title-four text-white">
+                            Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+                            bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở
+                            việc tập trung
+                          </h3>
+                        </div>
+                        <img
+                          class="play-video"
+                          src="./assets/images/play.svg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="swiper-slide system-video-item">
+                      <a
+                        data-fancybox="gallery"
+                        class="video-link"
+                        href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=0&enablejsapi=1&wmode=opaque"
+                      >
+                        <div class="box-img">
+                          <img
+                            class="img-video"
+                            src="./assets/images/video1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box-txt">
+                          <h3 class="title-four text-white">
+                            Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+                            bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở
+                            việc tập trung
+                          </h3>
+                        </div>
+                        <img
+                          class="play-video"
+                          src="./assets/images/play.svg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                    <div class="swiper-slide system-video-item">
+                      <a
+                        data-fancybox="gallery"
+                        class="video-link"
+                        href="http://www.youtube.com/embed/L9szn1QQfas?autoplay=0&enablejsapi=1&wmode=opaque"
+                      >
+                        <div class="box-img">
+                          <img
+                            class="img-video"
+                            src="./assets/images/video1.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="box-txt">
+                          <h3 class="title-four text-white">
+                            Chúng ta vẫn biết rằng, làm việc với một đoạn văn
+                            bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở
+                            việc tập trung
+                          </h3>
+                        </div>
+                        <img
+                          class="play-video"
+                          src="./assets/images/play.svg"
+                          alt=""
+                        />
+                      </a>
+                    </div>
+                  </div>
+                  <div class="pagi-video">
+                    <div class="pagi-prev pagi-btn">
+                      <i class="fa-solid fa-chevron-left"></i>
+                    </div>
+                    <div class="pagi-next pagi-btn">
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-12 system-img">
+              <div class="aligh-item-center row-head">
+                <h3 class="text-dark title-second">Hình ảnh</h3>
+                <a href="#" target="_blank" class="btn-view-all">
+                  Tất cả video
+                  <img src="./assets/images/Layer_1 (2).svg" alt="" />
+                </a>
+              </div>
+              <div class="system-img-slide gallery">
+                <div class="system-img-list swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide system-img-item">
+                      <div
+                        data-src="./assets/images/hinhanh.jpg"
+                        class="img-link gItem"
+                      >
+                        <img
+                          class="box-img"
+                          src="./assets/images/hinhanh.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="swiper-slide system-img-item">
+                      <div
+                        data-src="./assets/images/hinhanh.jpg"
+                        class="img-link gItem"
+                      >
+                        <img
+                          class="box-img"
+                          src="./assets/images/hinhanh.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-form">
+          <div class="dec">
+            <div class="decs decs-1 decor-bg-js">
+              <img src="./assets/images/cir1.png" alt="" />
+            </div>
+            <div class="decs decs-2 decor-bg-js">
+              <img src="./assets/images/cir2.png" alt="" />
+            </div>
+            <div class="decs decs-3 decor-bg-js">
+              <img src="./assets/images/cir3.png" alt="" />
+            </div>
+          </div>
+          <div class="inner">
+            <p class="tt">Đăng Ký Nhận Tin</p>
+            <p class="desc">
+              Hãy để bạn là người đầu tiên nhận ngay những ưu đãi đặc biệt nhất
+              từ chúng tôi
+            </p>
+            <div class="footer-form-f">
+              <form action="">
+                <div class="footer-form-flex">
+                  <input
+                    type="text"
+                    placeholder="Thả email nhận ngay ưu đãi..."
+                  />
+                  <button>
+                    <img src="./assets/images/send.png" alt="" />
+                    Gửi
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <div class="dec">
+          <div class="dec-inner"></div>
+        </div>
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-logo">
+              <a href="" class="custom-logo-link">
+                <img src="./assets/images/logo.png" alt="" />
+              </a>
+            </div>
+            <div class="footer-flex rows setGF">
+              <div class="footer-item">
+                <div class="footer-logo">
+                  <a href="" class="custom-logo-link">
+                    <img src="./assets/images/logo.png" alt="" />
+                  </a>
+                </div>
+                <p class="tt">Đăng Ký Nhận Tin</p>
+                <ul class="address">
+                  <li class="address-item">
+                    <span class="icon">
+                      <img src="./assets/images/ic-ph-red.svg" alt="" />
+                    </span>
+                    <p class="address-desc">
+                      <a href="" class="address-link"> 0909 993 854 </a>
+                      -
+                      <a href="" class="address-link"> 0909 973 175 </a>
+                    </p>
+                  </li>
+                  <li class="address-item">
+                    <span class="icon">
+                      <img src="./assets/images/ic-mail-red.svg" alt="" />
+                    </span>
+                    <p class="address-desc">
+                      <a href="" class="address-link">
+                        bephoangduyphat@gmail.com
+                      </a>
+                    </p>
+                  </li>
+                  <li class="address-item">
+                    <span class="icon">
+                      <img src="./assets/images/ic-pin-red.svg" alt="" />
+                    </span>
+                    <p class="address-desc">
+                      77 đường số 1, Cityland Center Hill, P. 7, Q. Gò Vấp, TP.
+                      Hồ Chí Minh
+                    </p>
+                  </li>
+                </ul>
+                <div class="footer-map">
+                  <div class="inner">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.7708308715564!2d106.67674607426036!3d10.828841989323085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528fe873fea65%3A0x80964ed27ff1e807!2zNzcgxJDGsOG7nW5nIHPhu5EgMSwgQ2l0eWxhbmQgQ2VudGVyIEhpbGxzLCBHw7IgVuG6pXAsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCA3MDAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1689733464495!5m2!1svi!2s"
+                      width="600"
+                      height="450"
+                      style="border: 0"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-item">
+                <p class="tt">Liên kết nhanh</p>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Giới thiệu </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Khuyến mãi </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Catalogues </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chứng nhận </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Tin tức </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Liên hệ </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <p class="tt">Chính sách chăm sóc khách hàng</p>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chính sách bảo hành </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      Điều khoản và điều kiện bảo hành
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      Kiến thứcChính sách Đặt Hàng và Thanh Toán
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link">
+                      Chính sách giao hàng và vận chuyển
+                    </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chính sách lắp đặt </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chính sách bảo mật </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chính sách bảo mật </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-item">
+                <p class="tt">Tổng đài hỗ trợ</p>
+                <div class="footer-sp">
+                  <a href="" class="footer-sp-it">
+                    <div class="left">
+                      <span class="ic">
+                        <img src="./assets/images/ic-sp.svg" alt="" />
+                      </span>
+                      <span class="name"> Tư vấn- mua hàng: </span>
+                    </div>
+                    <span class="txt"> 090 999 854 </span>
+                  </a>
+                  <a href="" class="footer-sp-it">
+                    <div class="left">
+                      <span class="ic">
+                        <img src="./assets/images/ic-clock.svg" alt="" />
+                      </span>
+                      <span class="name"> Thời gian hỗ trợ: </span>
+                    </div>
+                    <span class="txt"> 8h00 - 18h00 </span>
+                  </a>
+                </div>
+                <p class="tt">Phương thức thanh toán</p>
+                <ul class="menu-list">
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Chuyển khoản ngân hàng </a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="" class="menu-link"> Thanh toán tiền mặt </a>
+                  </li>
+                </ul>
+                <div class="bct">
+                  <img src="./assets/images/bct.png" alt="" />
+                </div>
+                <div class="dmca">
+                  <img src="./assets/images/dmca.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-cpr">
+        <div class="container">
+          <div class="footer-cpr-flex">
+            <span class="cpr">
+              © Bản quyền thuộc về CTY TNHH SX-TM Hoàng Duy Phát
+            </span>
+            <span class="follow">
+              <span class="text"> Theo dõi chúng tôi </span>
+              <div class="social">
+                <a href="" class="social-it">
+                  <img src="./assets/images/fb.png" alt="" />
+                </a>
+                <a href="" class="social-it">
+                  <img src="./assets/images/yt.png" alt="" />
+                </a>
+                <a href="" class="social-it">
+                  <img src="./assets/images/ins.png" alt="" />
+                </a>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="popup" data-popup-id="search">
+      <div class="popup-overlay"></div>
+      <div class="popup-main popup-search-box">
+        <div class="popup-over">
+          <div class="popup-wrapper">
+            <div class="popup-search">
+              <form action="">
+                <div class="popup-search-input">
+                  <input type="text" placeholder="Nhập từ khóa..." />
+                  <button class="btn-pri">
+                    <span class="txt">Tìm kiếm</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="popup-close">
+          <i class="fas fa-times icon"></i>
+        </div>
+      </div>
+    </div>
+    <div class="back-to-top backToTop">
+      <div class="triangle">
+        <div class="triangle-inner"></div>
+      </div>
+    </div>
+    <script src="./js/library/jquery/jquery.js"></script>
+    <script src="./js/library/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/library/aos/aos.js"></script>
+    <script src="./js/library/select2/select2.min.js"></script>
+    <script src="./js/library/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="./js/library/gallery/lightgallery-all.min.js"></script>
+    <script src="./js/library/jquery/jquery-migrate.js"></script>
+    <script src="./js/library/split/splitting.min.js"></script>
+    <script src="./js/library/ukiyo/ukiyo.min.js"></script>
+    <script src="./js/library/smoothscroll/SmoothScroll.min.js"></script>
+    <script src="./js/library/fancybox/fancybox.umd.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>

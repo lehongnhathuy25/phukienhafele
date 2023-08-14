@@ -1,124 +1,240 @@
 @import url("../assets/font/Themify/stylesheet.css");
 @import url("../assets/font/OpenSans/stylesheet.css");
 
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 
-    @media screen and (min-width:2000px) {
-        font-size: 90%;
-    }
+  @media screen and (min-width: 2000px) {
+    font-size: 90%;
+  }
 }
 
 body {
-    font-family: "Open Sans";
-    font-size: 16px;
-    line-height: 1.55;
-    font-weight: normal;
-    font-weight: 400;
-    color: #4B4B4B;
-    overflow: hidden auto;
-    background: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 1.55;
+  font-weight: normal;
+  font-weight: 400;
+  color: #4b4b4b;
+  overflow: hidden auto;
+  background: #ffffff;
 
-    @media screen and (min-width:2000px) {
-        font-size: 20px;
-    }
+  @media screen and (min-width: 2000px) {
+    font-size: 20px;
+  }
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 textarea,
 input {
-    resize: none;
-    outline: none;
-    font-weight: 400;
-    font-family: "Open Sans";
-    font-size: 16px;
+  resize: none;
+  outline: none;
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-size: 16px;
 }
 
 button,
 select {
-    border: none;
-    outline: none;
-    background-color: transparent;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
-
 .main {
-    min-height: 40vh;
+  min-height: 40vh;
 
-    @media screen and (max-width:1200px) {
-        min-height: 20vh;
-    }
+  @media screen and (max-width: 1200px) {
+    min-height: 20vh;
+  }
 }
 
 .container {
-    width: 100%;
-    max-width: 123rem;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 100%;
+  max-width: 123rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .over {
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
 
-    &::-webkit-scrollbar {
-        display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .no-scroll {
-    touch-action: none;
-    -webkit-overflow-scrolling: none;
-    overflow: hidden;
-    overscroll-behavior: none;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 .no-select {
-    user-select: none;
+  user-select: none;
 }
 
 iframe {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .effectShine {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .effectShine::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -75%;
-    z-index: 2;
-    display: block;
-    width: 50%;
-    height: 100%;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
-    -webkit-transform: skewX(-25deg);
-    transform: skewX(-25deg);
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
 }
 
 .wow {
-    animation-duration: 1s;
+  animation-duration: 1s;
 }
 
 .load-item {
-    display: none;
+  display: none;
 }
 
 .show-hide-toggle {
-    cursor: pointer;
+  cursor: pointer;
+}
+//title template
+.title-second {
+  @include fz-32;
+  font-weight: 700;
+}
+.title-third {
+  @include fz-24;
+  font-weight: 700;
+}
+.title-four {
+  @include fz-20;
+  font-weight: 700;
+}
+.title-txt-red {
+  @include fz-16;
+  font-weight: 700;
+  color: $color-pri;
+}
+.py {
+  padding: 4rem 0;
+}
+.position-relative {
+  position: relative;
+}
+.radius-8 {
+  border-radius: 0.8rem;
+}
+.radius-12 {
+  border-radius: 1.2rem;
+}
+.text-white {
+  color: $color-white;
+}
+.text-red {
+  color: $color-pri;
+}
+.text-dark {
+  color: $color-pri-dark;
+}
+.text-dark-2 {
+  color: $color-dark-2;
+}
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+.text-cap {
+  text-transform: capitalize;
+}
+.text-up {
+  text-transform: uppercase;
+}
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  .product-btn-txt {
+    z-index: 1;
+    position: relative;
+    transition: all 0.4s;
+    font-weight: 600;
+  }
+  &::after {
+    transition: all 0.4s;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 0;
+
+    background: $linear;
+  }
+  &:hover {
+    .product-btn-txt {
+      color: $color-white;
+    }
+    &::after {
+      width: 100%;
+      right: unset;
+      left: 0;
+    }
+  }
+}
+.pagi-btn {
+  position: relative;
+  overflow: hidden;
+  &::after {
+    transition: all 0.4s;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 50%;
+    background: $linear;
+  }
+  &:hover {
+    color: $color-white !important;
+    i {
+      color: $color-white !important;
+    }
+    &::after {
+      width: 100%;
+      right: unset;
+      left: 0;
+    }
+  }
 }

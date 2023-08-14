@@ -1,0 +1,74 @@
+.post-outstanding {
+  margin-top: 10.4rem;
+}
+.post-outstanding--slider {
+  padding: 0 1.2rem;
+}
+.post-outstanding--title {
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 4.3rem;
+}
+.post-outstanding--image {
+  position: relative;
+}
+.post-outstanding--image img {
+  width: 100%;
+}
+.post-outstanding--content {
+  position: absolute;
+  bottom: 2rem;
+  padding: 0 4rem;
+  color: white;
+  font-weight: 600;
+}
+
+.swiper-button-prev.outstanding--prev,
+.swiper-button-next.outstanding--next {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-button-prev.outstanding--prev::after,
+.swiper-button-next.outstanding--next::after {
+  color: rgb(194, 14, 52);
+  opacity: 1;
+}
+
+.swiper-button-prev.outstanding--prev.swiper-button-disabled,
+.swiper-button-next.outstanding--next.swiper-button-disabled {
+  opacity: 1;
+}
+
+.swiper-button-prev.outstanding--prev {
+  left: 36%;
+  transform: translateX(-36%);
+}
+
+.swiper-button-next.outstanding--next {
+  right: 36%;
+  transform: translateX(36%);
+}
+
+@media (max-width: 1024px) {
+  .post-outstanding--content {
+    position: absolute;
+    bottom: 2rem;
+    padding: 0 2rem;
+    color: white;
+    font-weight: 600;
+  }
+  .swiper-button-prev.outstanding--prev {
+    left: 1.8rem;
+  }
+  .swiper-button-next.outstanding--next {
+    right: 1.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .post-outstanding--content {
+    font-size: 1.4rem;
+  }
+}
+
+/*# sourceMappingURL=post.css.map */

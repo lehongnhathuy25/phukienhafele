@@ -1,6 +1,7 @@
 $color-pri: #C20E34 ;
 $color-pri-dark: #242424;
 $color-second: #FF5001;
+$color-dark-2: #4B4B4B;
 $color-third: #00E5FF;
 $color-four: #FFFAE6;
 $color-five: #994F25;
@@ -75,7 +76,7 @@ $radius: 6px;
 //Clip path
 $clipleft: polygon(100% 0, 0 0, 100% 100%);
 $clipright: polygon(0 0, 0 100%, 100% 100%);
-//Grid 
+//Grid
 $grid-gutter-width: 2.4rem;
 $grid-columns: 12;
 $gutters: (

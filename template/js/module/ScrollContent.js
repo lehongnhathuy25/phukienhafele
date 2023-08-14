@@ -25,79 +25,79 @@ export default function scrollContent() {
 	}
 
 
-
-	const anchors = document.querySelectorAll(".fixed-link-it");
-	const headerHeight = document.querySelector(".header").offsetHeight;
-	const secs = [];
-
-	function removeActive() {
-		anchors.forEach((e) => e.classList.remove("active"));
-	}
-
-	anchors.forEach((link) => {
-		let id = link.getAttribute("href").slice(1);
-		let sec = document.querySelector(`#${id}`);
-
-		secs.push(sec);
-		link.addEventListener("click", (e) => {
-			e.preventDefault();
-
-			window.scrollTo({
-				top: sec.offsetTop - 30,
-				behavior: "smooth",
-			});
-		});
-	});
-
-	window.addEventListener("scroll", () => {
-		let scrollY = window.scrollY;
-		secs.forEach((item, index) => {
-			if (scrollY > item.offsetTop - 60) {
-				removeActive();
-				anchors[index].classList.add("active");
-			} else {
-				anchors[index].classList.remove("active");
-			}
-		});
-	});
-
-	document.addEventListener('scroll', function () {
-		// Kiểm tra tất cả các section
-		sections.forEach(section => {
-			const sectionTop = section.getBoundingClientRect().top;
-
-			// Nếu section trên màn hình
-			if (sectionTop >= 0 && sectionTop <= window.innerHeight) {
-				// Thêm class active
-				section.classList.add('active');
-			} else {
-				// Loại bỏ class active
-				section.classList.remove('active');
-			}
-		});
-	});
-
-
-
 	const sections = document.querySelectorAll(".sec");
 	const nav = document.querySelector(".fixed-link");
+	const anchors = document.querySelectorAll(".fixed-link-it");
+	const headerHeight = document.querySelector(".header").offsetHeight;
+	if (anchors && sections && nav) {
+		
 
-	function addActiveClass() {
-		const scrollPosition = window.scrollY;
+		const secs = [];
 
-		// Get the top position of the first section
-		const firstSectionTop = sections[0].offsetTop - 80;
-
-		if (scrollPosition >= firstSectionTop) {
-			// Add "active" class to the nav
-			nav.classList.add("active");
-		} else {
-			// Remove "active" class from the nav
-			nav.classList.remove("active");
+		function removeActive() {
+			anchors.forEach((e) => e.classList.remove("active"));
 		}
-	}
 
-	// Add event listener for scroll events
-	window.addEventListener("scroll", addActiveClass);
+		anchors.forEach((link) => {
+			let id = link.getAttribute("href").slice(1);
+			let sec = document.querySelector(`#${id}`);
+
+			secs.push(sec);
+			link.addEventListener("click", (e) => {
+				e.preventDefault();
+
+				window.scrollTo({
+					top: sec.offsetTop - 30,
+					behavior: "smooth",
+				});
+			});
+		});
+
+		window.addEventListener("scroll", () => {
+			let scrollY = window.scrollY;
+			secs.forEach((item, index) => {
+				if (scrollY > item.offsetTop - 200) {
+					removeActive();
+					anchors[index].classList.add("active");
+				} else {
+					anchors[index].classList.remove("active");
+				}
+			});
+		});
+
+		document.addEventListener('scroll', function () {
+			// Kiểm tra tất cả các section
+			sections.forEach(section => {
+				const sectionTop = section.getBoundingClientRect().top;
+
+				// Nếu section trên màn hình
+				if (sectionTop >= 0 && sectionTop <= window.innerHeight) {
+					// Thêm class active
+					section.classList.add('active');
+				} else {
+					// Loại bỏ class active
+					section.classList.remove('active');
+				}
+			});
+		});
+
+		function addActiveClass() {
+			const scrollPosition = window.scrollY;
+
+			// Get the top position of the first section
+			const firstSectionTop = sections[0].offsetTop - 80;
+
+			if (scrollPosition >= firstSectionTop) {
+				// Add "active" class to the nav
+				nav.classList.add("active");
+			} else {
+				// Remove "active" class from the nav
+				nav.classList.remove("active");
+			}
+		}
+
+		// Add event listener for scroll events
+		window.addEventListener("scroll", addActiveClass);
+	}
 
 }

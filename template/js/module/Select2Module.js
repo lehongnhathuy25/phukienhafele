@@ -6,7 +6,12 @@ export default function Select2Module() {
     $(document).ready(function () {
         $('.select-has-icon').select2();
     });
-
+    $(document).ready(function () {
+        $('.select-province').select2();
+    });
+    $(document).ready(function () {
+        $('.select-showroom').select2();
+    });
     $('#selectIcon').select2({
         templateResult: function (data) {
             var $result = $('<div></div>');
@@ -34,5 +39,5 @@ export default function Select2Module() {
 
 
     // ====
-    
+
 }
